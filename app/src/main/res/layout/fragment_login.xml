@@ -6,9 +6,32 @@
     tools:context=".LoginFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
+    <Button
+        android:id="@+id/girisYapButtonLoginFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giriş Yap"
+        android:textSize="20sp"
+        android:translationY="190dp" />
+
+    <EditText
+        android:id="@+id/emailEmailTextLoginFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Example@mail.com"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        android:translationY="50dp" />
+
+    <EditText
+        android:id="@+id/sifrePasswordTextLoginFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        android:translationY="120dp" />
 </FrameLayout>

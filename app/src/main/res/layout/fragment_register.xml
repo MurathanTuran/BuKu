@@ -6,9 +6,52 @@
     tools:context=".RegisterFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
+    <EditText
+        android:id="@+id/isimPlainTextRegisterFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="İsim"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:translationY="50dp" />
+
+    <EditText
+        android:id="@+id/soyisimPlainTextRegisterFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Soyisim"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:translationY="120dp" />
+
+    <EditText
+        android:id="@+id/emailEmailTextRegisterFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Example@mail.com"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        android:translationY="190dp" />
+
+    <EditText
+        android:id="@+id/sifrePasswordTextRegisterFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Sifre"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        android:translationY="260dp" />
+
+    <Button
+        android:id="@+id/kayıtOlButtonRegisterFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kayıt Ol"
+        android:textSize="20sp"
+        android:translationY="330dp" />
 </FrameLayout>

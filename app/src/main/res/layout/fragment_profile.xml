@@ -6,9 +6,30 @@
     tools:context=".View.MainFragments.ProfileFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
+        android:id="@+id/kullaniciMailTextViewProfileFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Kullanıcı Maili"
+        android:textSize="20sp"
+        android:translationY="30dp" />
+
+    <TextView
+        android:id="@+id/bakiyeBilgiTextViewProfileFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Bakiye Bilgisi "
+        android:textSize="20sp"
+        android:translationY="80dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reyclerViewProfileFragment"
+        android:layout_width="match_parent"
+        android:layout_height="376dp"
+        android:layout_margin="20dp"
+        android:translationY="130dp" />
 
 </FrameLayout>

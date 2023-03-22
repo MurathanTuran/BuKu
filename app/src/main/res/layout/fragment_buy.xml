@@ -1,14 +1,157 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".View.MainFragments.BuyFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
+
+    <ImageView
+        android:id="@+id/imageViewBuyFragment"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        tools:src="@drawable/images" />
+
+    <EditText
+        android:id="@+id/kitapAdiPlainTextBuyFragment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Kitap Adını Giriniz"
+        android:inputType="textPersonName"
+        android:translationY="80dp" />
+
+    <RadioGroup
+        android:id="@+id/kategoriRadioGroupBuyFragment"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+
+
+        android:translationY="130dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KATEGORİ"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/testKitabiRadioButtonBuyFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Test Kitabı" />
+
+        <RadioButton
+            android:id="@+id/okumaKitabiRadioButtonBuyFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Okuma Kitabı"
+            android:translationX="150dp"
+            android:translationY="-48dp" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/kullanimDurumuRadioGroupBuyFragment"
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:translationY="220dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KULLANIM DURUMU"
+            android:textColor="#050505"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/yeniRadioButtonBuyFragment"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Yeni" />
+
+        <RadioButton
+            android:id="@+id/kullanilmisRadioButtonBuyFragment"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Kullanılmış" />
+
+        <RadioButton
+            android:id="@+id/eskiRadioButtonBuyFragment"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Eski" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/sayfaSayisiRadioGroupBuyFragment"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:translationY="390dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAYFA SAYISI"
+            android:textColor="#070707"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/yuzSayfaAzRadioButtonBuyFragment"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:text="<100" />
+
+        <RadioButton
+            android:id="@+id/yuzIkiyuzRadioButtonBuyFragment"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:text="100-200"
+            android:translationX="110dp"
+            android:translationY="-48dp" />
+
+        <RadioButton
+            android:id="@+id/ikiyuzUcyuzRadioButtonBuyFragment"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:text="200-300"
+            android:translationX="220dp"
+            android:translationY="-96dp" />
+
+        <RadioButton
+            android:id="@+id/ucyuzSayfaFazlaRadioButtonBuyFragment"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:text=">300 "
+            android:translationX="330dp"
+            android:translationY="-144dp" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/yorumPlainTextBuyFragment"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Yorum Ekleyebilirsiniz"
+        android:inputType="textPersonName"
+        android:translationY="480dp" />
+
+    <Button
+        android:id="@+id/satButtonBuyFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Sat"
+        android:translationY="520dp" />
 </FrameLayout>
