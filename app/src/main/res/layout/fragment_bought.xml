@@ -10,13 +10,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/upRecyclerViewBoughtFragment"
         android:layout_width="match_parent"
-        android:layout_height="270dp"
+        android:layout_height="match_parent"
         android:layout_margin="20dp" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/downRecyclerViewBoughtFragment"
-        android:layout_width="match_parent"
-        android:layout_height="270dp"
-        android:layout_margin="20dp"
-        android:translationY="290dp" />
 </FrameLayout>
