@@ -1,59 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".RegisterFragment">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-
-    <EditText
-        android:id="@+id/isimPlainTextRegisterFragment"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="İsim"
-        android:inputType="textPersonName"
-        android:textSize="20sp"
-        android:translationY="50dp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".View.LoginAndRegisterFragments.RegisterFragment">
 
-    <EditText
-        android:id="@+id/soyisimPlainTextRegisterFragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Soyisim"
-        android:inputType="textPersonName"
-        android:textSize="20sp"
-        android:translationY="120dp" />
+        <EditText
+            android:id="@+id/nameTextRegisterFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="İsim"
+            android:inputType="textPersonName"
+            android:textSize="20sp"
+            android:layout_marginTop="32dp" />
 
-    <EditText
-        android:id="@+id/emailEmailTextRegisterFragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Example@mail.com"
-        android:inputType="textEmailAddress"
-        android:textSize="20sp"
-        android:translationY="190dp" />
+        <EditText
+            android:id="@+id/surnameTextRegisterFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Soyisim"
+            android:inputType="textPersonName"
+            android:textSize="20sp"
+            android:layout_marginTop="32dp" />
 
-    <EditText
-        android:id="@+id/sifrePasswordTextRegisterFragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Sifre"
-        android:inputType="textPassword"
-        android:textSize="20sp"
-        android:translationY="260dp" />
+        <EditText
+            android:id="@+id/emailTextRegisterFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Example@mail.com"
+            android:inputType="textEmailAddress"
+            android:textSize="20sp"
+            android:layout_marginTop="32dp" />
 
-    <Button
-        android:id="@+id/kayıtOlButtonRegisterFragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#08FABB"
-        android:text="Kayıt Ol"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:translationY="330dp" />
-</FrameLayout>
+        <EditText
+            android:id="@+id/passwordTextRegisterFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Sifre"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:layout_marginTop="32dp" />
+
+        <Button
+            android:id="@+id/registerButtonRegisterFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#08FABB"
+            android:text="Kayıt Ol"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginTop="32dp" />
+
+    </LinearLayout>
+
+</ScrollView>

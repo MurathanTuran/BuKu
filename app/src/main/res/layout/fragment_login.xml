@@ -1,39 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".LoginFragment">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-
-    <Button
-        android:id="@+id/girisYapButtonLoginFragment"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#08FABB"
-        android:text="Giriş Yap"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:translationY="190dp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".View.LoginAndRegisterFragments.LoginFragment">
 
-    <EditText
-        android:id="@+id/emailEmailTextLoginFragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Example@mail.com"
-        android:inputType="textEmailAddress"
-        android:textSize="20sp"
-        android:translationY="50dp" />
+        <EditText
+            android:id="@+id/emailTextLoginFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Example@mail.com"
+            android:inputType="textEmailAddress"
+            android:textSize="20sp"
+            android:layout_marginTop="32dp" />
 
-    <EditText
-        android:id="@+id/sifrePasswordTextLoginFragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Şifre"
-        android:inputType="textPassword"
-        android:textSize="20sp"
-        android:translationY="120dp" />
-</FrameLayout>
+        <EditText
+            android:id="@+id/passwordTextLoginFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Şifre"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:layout_marginTop="32dp" />
+
+        <Button
+            android:id="@+id/loginButtonLoginFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#08FABB"
+            android:text="Giriş Yap"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginTop="32dp" />
+
+    </LinearLayout>
+
+</ScrollView>

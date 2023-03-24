@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".View.MainFragments.BuyFragment">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-
-
-    <ScrollView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:context=".View.MainFragments.BuyFragment">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:id="@+id/imageViewBuyFragment"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                tools:src="@drawable/images" />
+                tools:src="@drawable/ic_launcher_background" />
 
             <EditText
-                android:id="@+id/kitapAdiPlainTextBuyFragment"
+                android:id="@+id/bookNameTextBuyFragment"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:ems="10"
@@ -33,15 +35,12 @@
                 android:inputType="textPersonName" />
 
             <RadioGroup
-                android:id="@+id/kategoriRadioGroupBuyFragment"
+                android:id="@+id/categoryRadioGroupBuyFragment"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-
-
-                >
+                android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/categoryTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="KATEGORİ"
@@ -50,13 +49,13 @@
                     android:textStyle="bold" />
 
                 <RadioButton
-                    android:id="@+id/testKitabiRadioButtonBuyFragment"
+                    android:id="@+id/testBookRadioButtonBuyFragment"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:text="Test Kitabı" />
 
                 <RadioButton
-                    android:id="@+id/okumaKitabiRadioButtonBuyFragment"
+                    android:id="@+id/readingBookRadioButtonBuyFragment"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:text="Okuma Kitabı" />
@@ -64,12 +63,12 @@
             </RadioGroup>
 
             <RadioGroup
-                android:id="@+id/kullanimDurumuRadioGroupBuyFragment"
+                android:id="@+id/stateRadioGroupBuyFragment"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/stateTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="KULLANIM DURUMU"
@@ -78,31 +77,31 @@
                     android:textStyle="bold" />
 
                 <RadioButton
-                    android:id="@+id/yeniRadioButtonBuyFragment"
+                    android:id="@+id/newRadioButtonBuyFragment"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:text="Yeni" />
 
                 <RadioButton
-                    android:id="@+id/kullanilmisRadioButtonBuyFragment"
+                    android:id="@+id/usedRadioButtonBuyFragment"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:text="Kullanılmış" />
 
                 <RadioButton
-                    android:id="@+id/eskiRadioButtonBuyFragment"
+                    android:id="@+id/oldRadioButtonBuyFragment"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:text="Eski" />
             </RadioGroup>
 
             <RadioGroup
-                android:id="@+id/sayfaSayisiRadioGroupBuyFragment"
+                android:id="@+id/numberOfPageRadioGroupBuyFragment"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/NumberOfPageTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="SAYFA SAYISI"
@@ -111,25 +110,25 @@
                     android:textStyle="bold" />
 
                 <RadioButton
-                    android:id="@+id/yuzSayfaAzRadioButtonBuyFragment"
+                    android:id="@+id/lessThanHundredRadioButtonBuyFragment"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:text="<100" />
 
                 <RadioButton
-                    android:id="@+id/yuzIkiyuzRadioButtonBuyFragment"
+                    android:id="@+id/hundredTwoHundredRadioButtonBuyFragment"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:text="100-200" />
 
                 <RadioButton
-                    android:id="@+id/ikiyuzUcyuzRadioButtonBuyFragment"
+                    android:id="@+id/twoHundredThreeHundredRadioButtonBuyFragment"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:text="200-300" />
 
                 <RadioButton
-                    android:id="@+id/ucyuzSayfaFazlaRadioButtonBuyFragment"
+                    android:id="@+id/moreThanThreeHundredRadioButtonBuyFragment"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:text=">300 " />
@@ -137,7 +136,7 @@
             </RadioGroup>
 
             <EditText
-                android:id="@+id/yorumPlainTextBuyFragment"
+                android:id="@+id/commentTextBuyFragment"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:ems="10"
@@ -145,7 +144,7 @@
                 android:inputType="textPersonName" />
 
             <Button
-                android:id="@+id/satButtonBuyFragment"
+                android:id="@+id/buyButtonBuyFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
@@ -154,6 +153,6 @@
                 android:textColor="#000000" />
 
         </LinearLayout>
-    </ScrollView>
 
-</FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
