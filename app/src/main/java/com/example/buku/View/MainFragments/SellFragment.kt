@@ -5,11 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.buku.databinding.FragmentBuyBinding
+import com.example.buku.databinding.FragmentSellBinding
 
-class BuyFragment : Fragment() {
+class SellFragment : Fragment() {
 
-    private lateinit var binding: FragmentBuyBinding
+    private lateinit var binding: FragmentSellBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,7 +20,7 @@ class BuyFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentBuyBinding.inflate(inflater, container, false)
+        binding = FragmentSellBinding.inflate(inflater, container, false)
         return binding.root
     }
 
