@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp"
+    android:layout_marginTop="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageViewRecyclerRowBoughtFragment"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <EditText
+        android:id="@+id/nameTextRecyclerRowBoughtFragment"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        tools:text="Palme Fizik Kitabı"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="121dp" />
+
+    <EditText
+        android:id="@+id/pointTextRecyclerRowBoughtFragment"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#303030"
+        tools:text="Puanı: 8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <EditText
+        android:id="@+id/categoryTextRecyclerRowBoughtFragment"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        android:textColor="#484848"
+        tools:text="Test Kitabı"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <EditText
+        android:id="@+id/stateTextRecyclerRowBoughtFragment"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        android:textColor="#484848"
+        tools:text="Yeni"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="297dp" />
+
+    <EditText
+        android:id="@+id/numberOfPageTextRecyclerRowBoughtFragment"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        android:textColor="#484848"
+        tools:text="200-300"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="355dp"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/commentTextRecyclerRowBoughtFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        tools:text="Daha kullanılmamış yeni test kitabı."
+        android:textSize="16sp"
+        android:textColor="#484848"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/buyButtonRecyclerRowBoughtFragment"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginTop="8dp"
+        android:text="Elime Ulaştı"
+        android:backgroundTint="#08FABB"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="474dp" />
+
+</LinearLayout>

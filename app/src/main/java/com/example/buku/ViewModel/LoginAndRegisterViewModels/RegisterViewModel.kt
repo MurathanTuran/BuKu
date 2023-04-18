@@ -2,6 +2,7 @@ package com.example.buku.ViewModel.LoginAndRegisterViewModels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.buku.Model.Book
 import com.example.buku.Model.NewUser
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -25,6 +26,10 @@ class RegisterViewModel: ViewModel() {
             user.put("email", newUser.email)
             user.put("name", newUser.name)
             user.put("surname", newUser.surname)
+            user.put("isUserNew", true)
+            user.put("wallet", "0")
+            user.put("forSale", ArrayList<Book>())
+            user.put("waitingConfirmation", ArrayList<Book>())
 
             firestore.collection("Users").add(user).addOnSuccessListener {
                 registerToContainerFragmentB.value = true
