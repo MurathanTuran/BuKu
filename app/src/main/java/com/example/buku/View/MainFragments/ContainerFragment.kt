@@ -47,6 +47,5 @@ class ContainerFragment : Fragment() {
     private fun loadFragment(fragment: Fragment){
         val transaction = requireActivity().supportFragmentManager.beginTransaction()
         transaction.replace(R.id.layoutContainerFragment, fragment).commit()
-
     }
 }

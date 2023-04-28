@@ -46,8 +46,7 @@ class HomeFragment : Fragment() {
 
         val layoutManager = LinearLayoutManager(context)
         binding.recyclerViewHomeFragment.layoutManager = layoutManager
-        binding.recyclerViewHomeFragment.adapter = RecyclerAdapterHomeFragment(viewModel.getDataSetFromFirestore())
-
+        binding.recyclerViewHomeFragment.adapter = RecyclerAdapterHomeFragment(viewModel.getDataSetFromFirestore(), requireActivity().supportFragmentManager)
     }
 
 }
