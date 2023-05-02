@@ -123,7 +123,7 @@
         android:inputType="textMultiLine" />
 
     <Button
-        android:id="@+id/buyButtonRecyclerRowBoughtFragment"
+        android:id="@+id/iGotButtonRecyclerRowBoughtFragment"
         android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_marginLeft="24dp"

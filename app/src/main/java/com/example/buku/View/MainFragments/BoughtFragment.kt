@@ -46,7 +46,7 @@ class BoughtFragment : Fragment() {
 
         val layoutManager = LinearLayoutManager(context)
         binding.upRecyclerViewBoughtFragment.layoutManager = layoutManager
-        binding.upRecyclerViewBoughtFragment.adapter = RecyclerAdapterBoughtFragment(viewModel.getDataSetFromFirestore())
+        binding.upRecyclerViewBoughtFragment.adapter = RecyclerAdapterBoughtFragment(viewModel.getDataSetFromFirestore(), requireActivity().supportFragmentManager)
 
     }
 

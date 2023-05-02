@@ -77,9 +77,6 @@ class RecyclerAdapterHomeFragment(val itemList: ArrayList<Book>, val fragmentMan
             userDataset.wallet = userWallet.toString()
 
             for(i in 0 until sellerForSale!!.size){
-                println(book.id)
-                println(sellerForSale[i].id)
-                println(i)
                 if(book.id == sellerForSale[i].id){
                     sellerForSale.removeAt(i)
                     break
