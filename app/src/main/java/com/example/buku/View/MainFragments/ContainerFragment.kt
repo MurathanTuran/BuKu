@@ -3,13 +3,19 @@ package com.example.buku.View.MainFragments
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.get
 import com.example.buku.R
+import com.example.buku.View.LoginAndRegisterFragments.LoginOrRegisterFragment
+import com.example.buku.ViewModel.MainViewModels.ContainerViewModel
 import com.example.buku.databinding.FragmentContainerBinding
 
 
 class ContainerFragment : Fragment() {
 
     private lateinit var binding: FragmentContainerBinding
+
+    private lateinit var viewModel: ContainerViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +32,12 @@ class ContainerFragment : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        viewModel = ViewModelProvider(this).get(ContainerViewModel::class.java)
+
+    }
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.menu, menu)
     }
@@ -39,7 +51,10 @@ class ContainerFragment : Fragment() {
             R.id.profile -> {loadFragment(ProfileFragment())}
             R.id.sellToSystem -> {loadFragment(SellFragment())}
             R.id.setPassword -> {loadFragment(SetPasswordFragment())}
-            R.id.logout -> {}
+            R.id.logout -> {
+                viewModel.logout()
+                loadFragment(LoginOrRegisterFragment())
+            }
         }
         return true
     }
